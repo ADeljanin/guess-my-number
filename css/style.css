@@ -1,0 +1,274 @@
+::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #74c0fc;
+  opacity: 0.8;
+  font-size: 1.2rem;
+}
+
+:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #74c0fc;
+  opacity: 0.8;
+  font-size: 1.2rem;
+}
+
+::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #74c0fc;
+  opacity: 0.8;
+  font-size: 1.2rem;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #74c0fc;
+  opacity: 0.8;
+  font-size: 1.2rem;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 150%;
+}
+
+body {
+  font-family: "Iceland", cursive;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  gap: 3rem;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.8)), to(#339af0)), url(../img/numbers.jpg);
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), #339af0), url(../img/numbers.jpg);
+  background-size: cover;
+}
+
+p {
+  color: #333;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5rem;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  width: 80%;
+}
+
+hr {
+  border-top: 3px solid #1864ab;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-family: "Iceland", cursive;
+  background-color: #d0ebff;
+  -webkit-box-shadow: 2px 2px 15px #1864ab;
+          box-shadow: 2px 2px 15px #1864ab;
+  border: 2px solid #1864ab;
+  color: #333;
+  cursor: pointer;
+}
+
+.btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.btn-container-small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-change {
+  padding: 0.5rem;
+  background-color: #d0ebff;
+  cursor: pointer;
+}
+
+.btn-again {
+  background-color: #1c7ed6;
+  color: #fff;
+  -webkit-box-shadow: 2px 2px 15px #fff;
+          box-shadow: 2px 2px 15px #fff;
+  font-size: 2rem;
+  text-shadow: 2px 2px 15px #fff;
+  border-radius: 5rem;
+}
+
+.btn-again:hover {
+  background-color: #1864ab;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.section-primary {
+  margin: 0 auto;
+}
+
+.section-primary h1 {
+  color: #1864ab;
+  font-size: 3rem;
+  text-shadow: 2px 2px 15px #fff;
+  text-align: center;
+}
+
+.section-primary .secret-number {
+  background-color: #d0ebff;
+  padding: 2rem;
+  color: #1864ab;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4rem;
+  width: 50%;
+  margin: 0.5rem auto 0;
+  -webkit-box-shadow: 2px 2px 15px #1864ab;
+          box-shadow: 2px 2px 15px #1864ab;
+}
+
+.section-guess {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  /* Firefox */
+}
+
+.section-guess .test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-guess .test .number-input {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+  caret-color: transparent;
+  background-color: #d0ebff;
+}
+
+.section-guess input::-webkit-outer-spin-button,
+.section-guess input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.section-guess input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+.section-guess .result {
+  font-size: 1.5rem;
+}
+
+.section-guess .result .score,
+.section-guess .result .highscore {
+  text-shadow: 2px 2px 1px #fff;
+  font-weight: bold;
+}
+
+.section-guess .message {
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1280px) {
+  html {
+    font-size: 140%;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  html {
+    font-size: 130%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 120%;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .number-input {
+    padding: 0 !important;
+    width: 3rem;
+    font-size: 0.6rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
