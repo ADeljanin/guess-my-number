@@ -51,18 +51,18 @@ btnCheck.addEventListener("click", function () {
       "❕ Please pick a number between 1 and 20";
 
     document.querySelector("body").style.backgroundImage =
-      "linear-gradient(to top,rgba(255, 255, 255, 0.8),rgb(212, 37, 37)), url(../img/numbers.jpg)";
+      "linear-gradient(to top,rgba(255, 255, 255, 0.8),rgb(212, 37, 37)), url(https://raw.githubusercontent.com/ADeljanin/guess-my-number/main/img/numbers.jpg)";
 
     //If number is between 1 and 20 - to color back background and nubner is guessed
   } else if (guess > 0 && guess <= 20) {
     document.querySelector("body").style.backgroundImage =
-      "linear-gradient(to top,rgba(255, 255, 255, 0.8),#339af0), url(../img/numbers.jpg)";
+      "linear-gradient(to top,rgba(255, 255, 255, 0.8),#339af0), url(https://raw.githubusercontent.com/ADeljanin/guess-my-number/main/img/numbers.jpg)";
     if (guess === secretNumber) {
       document.querySelector(".message").textContent = "🥇 Correct number";
 
       document.querySelector(".secret-number").textContent = secretNumber;
       document.querySelector("body").style.backgroundImage =
-        "linear-gradient(to top,rgba(255, 255, 255, 0.8),rgb(25, 214, 57)), url(../img/numbers.jpg)";
+        "linear-gradient(to top,rgba(255, 255, 255, 0.8),rgb(25, 214, 57)), url(https://raw.githubusercontent.com/ADeljanin/guess-my-number/main/img/numbers.jpg)";
       document.querySelector(".secret-number").style.width = "100%";
       if (score > highScore) {
         highScore = score;
@@ -105,7 +105,7 @@ btnCheck.addEventListener("mouseleave", function () {
 //-----------------------------------------------------
 document.querySelector(".btn-again").addEventListener("click", function () {
   document.querySelector("body").style.backgroundImage =
-    "linear-gradient(to top,rgba(255, 255, 255, 0.8),#339af0), url(../img/numbers.jpg)";
+    "linear-gradient(to top,rgba(255, 255, 255, 0.8),#339af0), url(https://raw.githubusercontent.com/ADeljanin/guess-my-number/main/img/numbers.jpg)";
   score = 20;
   document.querySelector(".score").textContent = score;
   secretNumber = Math.trunc(Math.random() * 20) + 1;
