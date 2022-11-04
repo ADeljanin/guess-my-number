@@ -27,19 +27,11 @@ function stepDown() {
 
 btnCheck.addEventListener("click", function () {
   const guess = Number(document.querySelector(".number-input").value);
-  // if (guess <= 0 || guess > 20) {
-  //   document.querySelector(".message").textContent =
-  //     "❕ Please pick a number between 1 and 20";
-
-  //   document.querySelector("body").style.backgroundImage =
-  //     "linear-gradient(to top,rgba(255, 255, 255, 0.8),rgb(212, 37, 37)), url(../img/numbers.jpg)";
-  // } else
   if (guess > 0 && guess <= 20) {
     document.querySelector("body").style.backgroundImage =
       "linear-gradient(to top,rgba(255, 255, 255, 0.8),#339af0), url(../img/numbers.jpg)";
     if (guess === secretNumber) {
       document.querySelector(".message").textContent = "🥇 Correct number";
-
       document.querySelector(".secret-number").textContent = secretNumber;
       document.querySelector("body").style.backgroundImage =
         "linear-gradient(to top,rgba(255, 255, 255, 0.8),rgb(25, 214, 57)), url(../img/numbers.jpg)";
