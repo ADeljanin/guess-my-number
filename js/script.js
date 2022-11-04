@@ -29,12 +29,12 @@ btnCheck.addEventListener("click", function () {
   const guess = Number(document.querySelector(".number-input").value);
   if (guess > 0 && guess <= 20) {
     document.querySelector("body").style.backgroundImage =
-      "linear-gradient(to top,rgba(255, 255, 255, 0.8),#339af0), url(../img/numbers.jpg)";
+      "linear-gradient(to top,rgba(255, 255, 255, 0.8),#339af0), url(https://raw.githubusercontent.com/ADeljanin/guess-my-number/main/img/numbers.jpg)";
     if (guess === secretNumber) {
       document.querySelector(".message").textContent = "🥇 Correct number";
       document.querySelector(".secret-number").textContent = secretNumber;
       document.querySelector("body").style.backgroundImage =
-        "linear-gradient(to top,rgba(255, 255, 255, 0.8),rgb(25, 214, 57)), url(../img/numbers.jpg)";
+        "linear-gradient(to top,rgba(255, 255, 255, 0.8),rgb(25, 214, 57)), url(https://raw.githubusercontent.com/ADeljanin/guess-my-number/main/img/numbers.jpg)";
       document.querySelector(".secret-number").style.width = "100%";
       if (score > highScore) {
         highScore = score;
@@ -60,7 +60,7 @@ btnCheck.addEventListener("click", function () {
           "💥 You lost the game!";
         document.querySelector(".score").textContent = 0;
         document.querySelector("body").style.backgroundImage =
-          "linear-gradient(to top,rgba(255, 255, 255, 0.8),#d42525), url(../img/numbers.jpg)";
+          "linear-gradient(to top,rgba(255, 255, 255, 0.8),#d42525), url(https://raw.githubusercontent.com/ADeljanin/guess-my-number/main/img/numbers.jpg)";
         btnCheck.disabled = true;
         btnCheck.style.backgroundColor = "#c4c4c4";
         numberInput.disabled = true;
@@ -88,7 +88,7 @@ btnCheck.addEventListener("mouseleave", function () {
 document.querySelector(".btn-again").addEventListener("click", function () {
   document.querySelector(".btn-container").style.display = "flex";
   document.querySelector("body").style.backgroundImage =
-    "linear-gradient(to top,rgba(255, 255, 255, 0.8),#339af0), url(../img/numbers.jpg)";
+    "linear-gradient(to top,rgba(255, 255, 255, 0.8),#339af0), url(https://raw.githubusercontent.com/ADeljanin/guess-my-number/main/img/numbers.jpg)";
   score = 20;
   document.querySelector(".score").textContent = score;
   secretNumber = Math.trunc(Math.random() * 20) + 1;
