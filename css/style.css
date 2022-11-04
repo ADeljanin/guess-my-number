@@ -58,8 +58,8 @@ body {
           justify-content: center;
   height: 100vh;
   gap: 3rem;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.8)), to(#339af0)), url(../img/numbers.jpg);
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), #339af0), url(../img/numbers.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.8)), to(#339af0)), url(https://raw.githubusercontent.com/ADeljanin/guess-my-number/main/img/numbers.jpg);
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), #339af0), url(https://raw.githubusercontent.com/ADeljanin/guess-my-number/main/img/numbers.jpg);
   background-size: cover;
 }
 
